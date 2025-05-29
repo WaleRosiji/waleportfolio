@@ -1,1 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omoawale's Frontend Portfolio - React, Javascript, CSS">
+    <title>Omowale's Portforlio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Omowale's Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Omowale's Portfolio</a>
+
+            <!-- Hamburger Icon -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Hero Section-->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hello, I'm Omowale</h1>
+            <h2>A Frontend Developer</h2>
+            <p>Passionate about building sleek, responsive websites with clean, semantic code.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+        <div class="scroll-prompt">
+            <span>Scroll down</span>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <!--About Section-->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/images/4e4493d0-e67c-4245-87ef-9f2fd4212055.jpg" class="small-image" alt="Profile Picture">
+                </div>
+                <div class="about-text">
+                    <h3>Who I Am</h3>
+                    <p>I'm a frontend developer with an ethusiasm for building responsive websites and web pplications
+                        that make a difference. With a recent Advanced Frontend Certification from New Horizons ICT,
+                        I bring creativity and code together to bring ideas to life.</p>
+                    <p>My goal is to create intuitive user experiences with clean, efficient code. When i'm not coding,
+                        I enjoy learning new technologies and contributing to open soursce projects.</p>
+                   
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+   <!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <!-- Tip Calculator Project Card -->
+            <div class="project-card" data-category="javascript">
+                <div class="tip-calculator">
+                    <h3>Tip Calculator</h3>
+                    <div class="calculator-container">
+                        <div class="input-group">
+                            <label class="section-title" for="bill">Bill</label>
+                            <div class="error-message">Can't be zero</div>
+                            <div class="input-icon">$</div>
+                            <input type="number" id="bill" class="input-field" placeholder="0.00">
+                        </div>
+                        
+                        <div class="section-title">Select Tip %</div>
+                        <div class="tip-options">
+                            <button class="tip-btn" value="5">5%</button>
+                            <button class="tip-btn" value="10">10%</button>
+                            <button class="tip-btn" value="15">15%</button>
+                            <button class="tip-btn" value="25">25%</button>
+                            <button class="tip-btn" value="50">50%</button>
+                            <input type="number" class="custom-tip" placeholder="Custom">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label class="section-title" for="people">Number of People</label>
+                            <div class="error-message">Can't be zero</div>
+                            <div class="input-icon">👥</div>
+                            <input type="number" id="people" class="input-field" placeholder="1">
+                        </div>
+                        
+                        <div class="output-section">
+                            <div class="output-row">
+                                <div>
+                                    <div class="output-label">Tip Amount</div>
+                                    <div class="output-subtext">/ person</div>
+                                </div>
+                                <div class="output-amount" id="tip-amount">$0.00</div>
+                            </div>
+                            
+                            <div class="output-row">
+                                <div>
+                                    <div class="output-label">Total</div>
+                                    <div class="output-subtext">/ person</div>
+                                </div>
+                                <div class="output-amount" id="total-amount">$0.00</div>
+                            </div>
+                            
+                            <button class="reset-btn" id="reset-btn" disabled>Reset</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Tip Calculator</h3>
+                    <p>A responsive calculator that helps determine tip amounts and splits bills between people.</p>
+                    <div class="tech-used">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/WaleRosiji/tipcalc.git" class="code-btn" target="_blank">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rock Paper Scissors Project Card (keep this one) -->
+            <div class="project-card" data-category="javascript">
+                <div class="rps-game">
+                    <h3>Rock Paper Scissors</h3>
+                    <div class="game-container">
+                        <div class="choices">
+                            <button class="choice-btn" data-choice="rock">✊</button>
+                            <button class="choice-btn" data-choice="paper">✋</button>
+                            <button class="choice-btn" data-choice="scissors">✌️</button>
+                        </div>
+                        <div id="game-result" class="result-box">
+                            <p>Make your choice!</p>
+                        </div>
+                        <div class="scoreboard">
+                            <p>You: <span id="player-score">0</span></p>
+                            <p>Computer: <span id="computer-score">0</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Rock Paper Scissors</h3>
+                    <p>Classic game with score tracking and responsive design.</p>
+                    <div class="tech-used">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/WaleRosiji/rock-paper-scissors-.git" class="code-btn" target="_blank">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--Skills Section-->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill">
+                        <p>HTML5</p>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 78%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>CSS3</p>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 69%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>JavaScript</p>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill">
+                        <p>Git</p>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 74%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>VS Code</p>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 81%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3>New Horizons ICT</h3>
+                        <h4>Advanced Frontend Certification</h4>
+                        <p>Acquired advanced skills in frontend development, including HTML5, CSS3, JavaScript, and responsive design, through a rigorous training program.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>Web Development Intern</h3>
+                        <h4>Tech Solutions Inc.</h4>
+                        <p>Assisted in developing and maintaining client websites, implemented responsive designs, and
+                            collaborated with senior developers on various projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> walerosiji@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +2348061611802</p>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                    <div id="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Rosiji Omowale. All rights reserved.
+            <p>
+            <P>Last Updated: 25/05/2025<span id="datetime"></span></P>
+            <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>
